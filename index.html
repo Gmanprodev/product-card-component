@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-    
-    <title>Frontend Mentor | Product preview card component</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Product preview card component</title>
 </head>
-<body class="background-color">
-    <div class="container items-center">
-        <div class="flex-none sm:flex justify-center items-center max-w-sm bg-white border border-gray-200 rounded-lg shadow-md">
-            <a class="block w-full h-full">
-                <img class="rounded-t-lg h-72 w-full object-cover" src="assets/images/image-product-desktop.jpg" alt="" />
-            </a>
-            <div class="p-5">
-                <p>Perfume</p>
-                <p>Gabrielle Essence Eau De Parfum</p>
-                <p class="text-sm ">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-                    Perfumer-Creator for the House of CHANEL.
-                </p>
-                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Add to Cart
-                    <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </a>
-            </div>
+<body class="flex-column">
+  <main class="product flex">
+    <div class="product-img">
+      <img class="desktop" src="assets/images/image-product-desktop.jpg" alt="main product">
+      <img class="mobile" src="assets/images/image-product-mobile.jpg" alt="main product">
+    </div>
+    <div class="flex flex-column text-container flex-between">
+      <div class="text-card">
+        <p class=" preview m-x">Preview</p>
+        <h1 class="display-font dark-gray m-x mt-20">Gabrielle Essence Eau De Parfum</h1>
+        <p class="description m-x">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <div class="m-x flex mt-30">
+          <h2 class="display-font dark-green" title="price">$149.99</h2>
+          <s class="old-price" title="old price">$169.99</s>
         </div>
+      </div>
+      <button class="card-button m-x m-y"><span class="icon"></span><span>Add to Cart</span></button>
     </div>
-    
-<!--
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Marc Gulliver</a>.
-    </div>
--->
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/marisol-azofeifa/" target="_blank">Marc Gulliver</a>.
+  </footer>
 </body>
 </html>
